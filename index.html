@@ -10,6 +10,12 @@
       </div>
       <script type="module">
         import {Termino} from 'https://cdn.jsdelivr.net/gh/MarketingPipeline/Termino.js@v1.0.1/dist/termino.min.js';
+        let YOUR_CUSTOM_SETTINGS = {
+          allow_scroll: false, // disable scroll up & down on terminal 
+          prompt: ">> ", // custom prompt
+          command_key: 18, // custom command key
+          disable_terminal_input: true // disable any user commands / inputs. --- Useful for making terminal animations etc! 
+        }
         let term= Termino(document.getElementById("terminal"))
         term.echo("Hello world from https://github.com/MarketingPipeline")
       </script>
